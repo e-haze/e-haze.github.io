@@ -1,0 +1,9 @@
+.uitest {
+	background: #00000050;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
