@@ -357,13 +357,3 @@ html {
 	border-radius: 0 0 0.5em 0.5em;
 	overflow: hidden;
 }
-.contactBox {
-	background-color: #fd2300;
-	color: black;
-	display: block;
-	height: 10.1em;
-	width: 55em;
-	margin: 2em 0 0 1.9em;
-	border-radius: 0.5em 0.5em 0 0;
-	overflow: hidden;
-}
