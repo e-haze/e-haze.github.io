@@ -14,13 +14,14 @@ body.lb-disable-scrolling {
 
 .lightbox {
   position: absolute;
-  left: 0;
   width: 100%;
   z-index: 10000;
   text-align: center;
   line-height: 0;
   font-weight: normal;
   outline: none;
+
+  left: 0;
 }
 
 .lightbox .lb-image {
@@ -45,7 +46,7 @@ body.lb-disable-scrolling {
   height: 250px;
   margin: 0 auto;
   border-radius: 0.4em;
-  background-color: black;
+  background-color: #0000;
   overflow: hidden;	
 }
 
