@@ -557,8 +557,8 @@ html {
 	background-color: var(--Acc);
 	color: white;
 	position: relative;
-	z-index: 1;
-	margin-top: 1.7em;
+	z-index: -7;
+	margin-top: 16.3em;
 	height: 39em;
 	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
 	background-image: linear-gradient(0deg, #ff000000, #0000008c), url(siteassets/bg_banner.webp);
@@ -591,8 +591,8 @@ html {
 	background-color: var(--Acc);
 	color: white;
 	position: relative;
-	z-index: -7;
-	margin-top: 16.4em;
+	z-index: 0;
+	margin-top: 1.8em;
 	height: 39em;
 	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
 	background-image: linear-gradient(0deg, #ff000000, #0000008c), url(siteassets/bg_banner.webp);
