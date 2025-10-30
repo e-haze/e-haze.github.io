@@ -774,3 +774,21 @@ html {
 	background-size: cover;
 	background-position: center;
 }
+
+
+.ptTemp {
+	position: absolute;
+	background: #ffffff0f;
+	display: block;
+	height: 50%;
+	width: 100%;
+	transform: translate(0, 50%);
+	backdrop-filter: blur(2em);
+	box-shadow:0 0 0.2em 0 #00000070;
+	font-family: 'gmarket sans';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	flex-direction: column;
+}
