@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=VT323);
-@import url(https://fonts.googleapis.com/css2?family=Basic:wght@400);
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400);
 @import url("siteassets/fonts/gmarket.otf");
 
 :root {
@@ -315,7 +316,7 @@ html {
 
 .aboutInfo {
 	background-color: var(--Acc);
-	color: #1b1b1b;
+	color: #1e1e1e;
 	display: block;
 	height: 21.25em;
 	width: 58.8em;
@@ -472,10 +473,10 @@ html {
 }
 .contactBox {
 	position: relative;
-	background-color: #ffffff1f;
-	border-radius: 0.3em;
+	background-color: #d5d5d51a;
+	border-radius: 0.4em;
 	color: black;
-	display: flex;
+	display:  flex;
 	align-items: center;
 	justify-content: center;
 	height: 29em;
@@ -485,17 +486,19 @@ html {
 	float: right;
 	backdrop-filter: blur(0.3em);
 	box-shadow: 0 0 0.1em 0 #00000070, 0 0.6em 0.3em 0 #0000004d;
+	font-family: basic;
 }
  button[type="submit"] {
     box-shadow:0 0.5em 0.5em 0 #00000031;
-    width:30.5em;
-    height:3em;
+    width:416px;
+    height:75px;
     resize:none;
     border:0;
     font-family:'basic';
     border-radius:0.12em;
     background-color:#ffffff82;
-    cursor:pointer
+    cursor:pointer;
+	margin-top:20px;
 }
  button[type="submit"]:hover {
     background-color:#eca21a;
@@ -774,6 +777,9 @@ html {
 	background-size: cover;
 	background-position: center;
 }
+
+
+
 
 
 .ptTemp {
