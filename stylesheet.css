@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=VT323);
 @import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400);
 @import url("siteassets/fonts/gmarket.otf");
 
 :root {
@@ -486,7 +485,7 @@ html {
 	float: right;
 	backdrop-filter: blur(0.3em);
 	box-shadow: 0 0 0.1em 0 #00000070, 0 0.6em 0.3em 0 #0000004d;
-	font-family: basic;
+	font-family: 'Lato';
 }
  button[type="submit"] {
     box-shadow:0 0.5em 0.5em 0 #00000031;
@@ -494,7 +493,8 @@ html {
     height:75px;
     resize:none;
     border:0;
-    font-family:'basic';
+    font-family:'Lato';
+	font-weight: 700;
     border-radius:0.12em;
     background-color:#ffffff82;
     cursor:pointer;
