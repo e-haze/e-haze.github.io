@@ -3,14 +3,14 @@
 @import url("siteassets/fonts/gmarket.otf");
 
 :root {
-    --Acc: #939499;	
+    --Acc: #a1a2a6;	
 }
 html {
     scrollbar-width: none;
     scroll-behavior: smooth;
 }
 #linkURL {
-	color: #202020;
+	color: #191919;
 	text-decoration: none;
 }
 #linkURL:hover {
@@ -26,13 +26,22 @@ html {
 	color: white;
 	text-decoration: none;
 }
+#linkSPURL {
+	color: #ffffff00;
+	text-decoration: none;
+}
+#linkSPURL:hover {
+	color: white;
+	background: #202020;
+	text-decoration: none;
+}
 #imgHv:hover { 
-    filter:  invert(0.15) brightness(1.2);
+    filter:  contrast(0.9) brightness(1.2);
 	transition: transform 0.1s ease-in-out 0ms;
 	transform:translateY(0.2em);
 }
 #imgLv:hover { 
-    filter:  invert(0.15) brightness(1.2);
+    filter:  contrast(0.9) brightness(1.2);
 }
 ::placeholder {
     color: white;
@@ -51,6 +60,7 @@ html {
 .mainFrame {
 	position: absolute;
 	background-color: #080808;
+	background-image: linear-gradient(90deg, #1f1f1f, #f0f0f0);
 	display: block;
 	height: 285em;
 	width: 58.8em;
@@ -79,12 +89,12 @@ html {
 	top: 50%;
 	left: 50%;
 	position: fixed;
-	width: 70em;
+	width: 71em;
 	height: 110%;
-	background: #ffffff0f;
+	background: #ffffff05;
 	transform: translate(-50%, -50%);
-	backdrop-filter: blur(2em);
-	box-shadow: 0 0 0.2em 0 #00000070;
+	backdrop-filter: blur(1em);
+	box-shadow: 0 0 0.2em 0 #00000050, inset 0 0 0.2em 0 #ffffff17;
 }
 .ctWrapperL {
 	background-color: #0000;
@@ -129,7 +139,7 @@ html {
 	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f;
 	z-index: 2;
 	margin-top: -0.5em;
-	background-image: repeating-linear-gradient(45deg, #0a0a0a00, #0a0a0a00 4px, #17171714 0, #17171714 8px);
+	background-image: repeating-linear-gradient(45deg, #0a0a0a00, #0a0a0a00 4px, #1717171c 0, #1717171c 8px);
     transition: height 0.4s ease-in-out 0s,color 0.5s ease-in-out 1.5s;
 	display: flex;
 	align-items: flex-end;
@@ -196,10 +206,10 @@ html {
 	user-select: none;
 	align-items: center;
 	justify-content: center;
-	gap: 2.3em;
+	gap: 1.8em;
 	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f;
-	background-image: linear-gradient(0deg, #ffffff00, #00000090);
-	z-index: -2;
+	background-image: linear-gradient(0deg, #00000000, #2c2e32);
+	z-index: -1;
 	margin-top:-0.6em;
 	padding: 0.6em 0 0 0;
 }
@@ -214,9 +224,9 @@ html {
 	user-select: none;
 	align-items: center;
 	justify-content: center;
-	gap: 1.75em;
+	gap: 1.4em;
 	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f;
-	background-image: linear-gradient(0deg, #ffffff00, #00000090);
+	background-image: linear-gradient(0deg, #00000000, #2c2e32);
 	z-index: -5;
 	margin-top:-0.6em;
 	padding: 0.6em 0 0 0;
@@ -229,7 +239,7 @@ html {
 	height: 17.8em;
 	margin-top: -0.6em;
 	user-select: none;
-	z-index: -11;
+	z-index: -12;
 }
 .ctBlock {
     color: white;
@@ -239,25 +249,6 @@ html {
 	width: 13.05em;
 	margin: -1em 0 0.8em 0;
 	background: linear-gradient(-90deg, #00000014, #000000);
-}
-.ctSticker {
-    color: #00000050;
-	background-color: var(--Acc);
-    display: flex;
-	position: absolute;
-	align-items: center;
-	justify-content: center;
-	border-radius: 5em;
-	box-shadow: 0 0 0.05em 0.01em #0000002e;
-	margin: 3.4em 0 0 5.8em;
-	height: 2.1em;
-	width: 2.1em;
-	font-size: 120%;
-	font-family: 'gmarket sans', bold;
-    font-weight: 900;
-	padding: 0.2em 0.1em 0 0.1em;
-	transform: rotate(-35deg);
-	user-select: none;
 }
 .icoWrap {
 	background: #0000;
@@ -320,7 +311,7 @@ html {
 	height: 21.25em;
 	width: 58.8em;
 	overflow: hidden;
-	background-image: linear-gradient(0deg, #ffffff00, #00000025), repeating-linear-gradient(45deg, #0a0a0a00, #0a0a0a00 4px, #17171714 0, #17171714 8px);
+	background-image: repeating-linear-gradient(45deg, #0a0a0a00, #0a0a0a00 4px, #1717171c 0, #1717171c 8px);
 	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f;
 	border-radius: 0 0 0.5em 0.5em;
 	position: relative;
@@ -336,7 +327,7 @@ html {
 	margin: 0.8em 0 0 0.8em;
 	border-radius: 0.15em;
 	overflow: hidden;
-	box-shadow: 0.3em 0.3em 0.15em 0 #00000060, 0.07em 0.07em 0.1em 0 #00000024;
+	box-shadow: 0 0.3em 0.18em 0 #00000060;
 }
 .aboutWorks {
 	background: none;
@@ -351,7 +342,7 @@ html {
 	display: block;
 	height: 10.4em;
 	width: 58.8em;
-	margin: -3.6em 0 -0.25em 0;
+	margin: -2.5em 0 -0.25em 0;
 	overflow: hidden;
 	background-image: url(siteassets/bg_gallery.webp);
 	background-size: cover;
@@ -359,12 +350,12 @@ html {
 	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f;
 	border-radius: 0 0 0.5em 0.5em;
 	position: absolute;
-	z-index: -9;
+	z-index: -10;
 	transition: margin 0.4s ease-in-out 0s;
 	user-select: none;
 }
 .aboutGallery:hover {
-	margin: -1.0em 0 -0.25em 0;
+	margin: -0.0em 0 -0.25em 0;
     transition: margin 0.4s ease-in-out 0ms;
 }
 .paWrapperL1 {
@@ -436,8 +427,24 @@ html {
     padding: 0.5em 0 0 0;
 	height: 29.6em;
 	width: 43.1em;
-	background-image: linear-gradient(0deg, #ffffff00, #00000090);
+	background-image: linear-gradient(0deg, #00000000, #2c2e32);
 	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f;
+	z-index: 2;
+	gap: 1em;
+	overflow: clip;
+}
+.ctBeeVTab {
+	position: absolute;
+	background-color: var(--Acc);
+    display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0 0 0.7em 0.7em;
+    padding: 0.5em 0 0 0;
+	height: 29.6em;
+	width: 43.1em;
+	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f;
+	background-image: linear-gradient(0deg, #00000000, #2c2e32);
 	z-index: 2;
 	gap: 1em;
 	overflow: clip;
@@ -456,9 +463,24 @@ html {
 	box-shadow: 0 0.5em 0.2em 0 #00000050, 0 0em 0.3em 0 #00000060;
 	z-index: 2;
 }
-
-.contactWrap {
+.ct3DVTab {
 	position: absolute;
+	background-color: var(--Acc);
+    display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0 0 0.7em 0.7em;
+    padding: 0.5em 0 0 0;
+	height: 29.6em;
+	width: 43.1em;
+	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f;
+	background-image: linear-gradient(0deg, #ffffff00, #00000090);
+	z-index: 2;
+	gap: 1em;
+	overflow: clip;
+}
+.contactWrap {
+	position: relative;
 	background-color: #6e6e6e;
 	color: black;
 	display: block;
@@ -468,7 +490,9 @@ html {
     background-image: url(siteassets/bg_contact.webp);
 	background-size: cover;
 	background-position: center;
-	z-index: -13;
+	box-shadow: 0 0.45em 0.15em 0 #00000050, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff12;
+    border-radius: 0 0 0.7em 0.7em;
+	z-index: -20;
 }
 .contactBox {
 	position: relative;
@@ -484,7 +508,6 @@ html {
 	overflow: hidden;
 	float: right;
 	backdrop-filter: blur(0.3em);
-	box-shadow: 0 0 0.1em 0 #00000070, 0 0.6em 0.3em 0 #0000004d;
 	font-family: 'Lato';
 }
  button[type="submit"] {
@@ -553,6 +576,8 @@ html {
     background-color: var(--Acc);
 }
 
+/*--spotlight-boxes-------------------------------*/
+/*------------------------------------------------*/
 .infoBoxWh {
 	
 	display: flex;
@@ -560,8 +585,8 @@ html {
 	background-color: var(--Acc);
 	color: white;
 	position: relative;
-	z-index: -7;
-	margin-top: 16.3em;
+	z-index: 0;
+	margin-top: 3em;
 	height: 39em;
 	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
 	background-image: linear-gradient(0deg, #ff000000, #0000008c), url(siteassets/bg_banner.webp);
@@ -594,8 +619,8 @@ html {
 	background-color: var(--Acc);
 	color: white;
 	position: relative;
-	z-index: 0;
-	margin-top: 1.8em;
+	z-index: -7;
+	margin-top: 16.7em;
 	height: 39em;
 	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
 	background-image: linear-gradient(0deg, #ff000000, #0000008c), url(siteassets/bg_banner.webp);
@@ -611,8 +636,8 @@ html {
 	background-color: var(--Acc);
 	color: white;
 	position: relative;
-	z-index: -10;
-	margin-top: 6.4em;
+	z-index: -11;
+	margin-top: 7.6em;
 	height: 39em;
 	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
 	background-image: linear-gradient(0deg, #ff000000, #0000008c), url(siteassets/bg_banner.webp);
@@ -628,9 +653,29 @@ html {
 	background-color: var(--Acc);
 	color: white;
 	position: relative;
-	z-index: -12;
+	z-index: -18;
+	margin-top: 0.8em;
+	height: 39em;
+	box-shadow: 0 0.45em 0.15em 0 #00000050, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
+	background-image: linear-gradient(0deg, #ff000000, #0000008c), url(siteassets/bg_banner.webp);
+	background-size: contain;
+	background-position: center;
+	font-family: 'gmarket sans';
+	font-weight: 500;
+}
+
+/*------------------------------------------------*/
+
+.ctWrapperS3content {
+	
+	display: flex;
+	border-radius: 0 0 0.7em 0.7em;
+	background-color: var(--Acc);
+	color: white;
+	position: relative;
+	z-index: -14;
 	margin-top: -0.6em;
-	height: 18.8em;
+	height: 22.9em;
 	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
 	background-image: linear-gradient(0deg, #ff000000, #0000008c), url(siteassets/bg_banner.webp);
 	background-size: contain;
@@ -638,6 +683,7 @@ html {
 	font-family: 'gmarket sans';
 	font-weight: 500;
 }
+
 .marginTab {
 	
 	color: white;
@@ -689,79 +735,46 @@ html {
 	background-size: cover;
 	background-position: bottom;
 }
-.tearStrip {
+.marginTab4 {
 	
 	color: white;
-    background: none;
+	background-color: #282828;
 	position: absolute;
-	height: 5.2em;
-	width: 61.8em;
-	border-radius: 3.5em 0 0 3.5em;
+	height: 2.4em;
+	width: 58.8em;
+	border-radius: 0 0 0.7em 0.7em;
 	overflow: hidden;
 	user-select: none;
-	box-shadow: -0.5em 0 0.3em 0 #00000030;
-	z-index: 10;
-	margin: 32em 0 0 -3em;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-}
-.tearStrip2 {
-	
-	color: white;
-    background: none;
-	position: absolute;
-	height: 5.2em;
-	width: 61.8em;
-	border-radius: 3.5em 0 0 3.5em;
-	overflow: hidden;
-	user-select: none;
-	box-shadow: -0.5em 0 0.3em 0 #00000030;
-	z-index: 10;
-	margin: 29.5em 0 0 -3em;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-}
-.tearStrip3 {
-	
-	color: white;
-    background: none;
-	position: absolute;
-	height: 5.2em;
-	width: 61.8em;
-	border-radius: 3.5em 0 0 3.5em;
-	overflow: hidden;
-	user-select: none;
-	box-shadow: -0.5em 0 0.3em 0 #00000030;
-	z-index: 10;
-	margin: 29.5em 0 0 -3em;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
+	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
+	z-index: -19;
+	margin-top: -1em;
+	background-image: url(siteassets/bg_banner.webp);
+	background-size: cover;
+	background-position: bottom;
 }
 .RTT {
 	
 	color: white;
 	background-color: #282828;
 	position: absolute;
-	height: 3.5em;
-	width: 3.5em;
+	height: 3.4em;
+	width: 3.4em;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	user-select: none;
-	background-image: url(siteassets/bg_banner.webp);
-	background-size: contain;
-	margin: 29.95em 0 0 59.8em;
+	background-image: url(siteassets/bg_contact.webp);
+	background-size: 1700%;
+	background-position: left;
+	margin: 29.8em 0 0 1.5em;
 	border-radius: 5em;
-	box-shadow: 0 0.45em 0.2em 0 #00000035, 0 0.15em 0.15em 0 #0000000f;
+	box-shadow: 0 0.5em 0.5em 0 #00000031, inset 0 0 0.1em 0.1em #ffffff14;
 	transition: transform 0.3s ease-in-out 0ms, box-shadow 0.3s ease-in-out 0ms;
 }
 .RTT:hover {
 	transition: transform 0.3s ease-in-out 0ms, box-shadow 0.3s ease-in-out 0ms;
 	transform:translateY(-0.2em);
-	box-shadow: 0 0.8em 0.5em 0 #00000035, 0 0.15em 0.15em 0 #0000000f;	
+	box-shadow: 0 0.8em 0.5em 0 #00000035, 0 0.15em 0.15em 0 #0000000f, inset 0 0 0.1em 0.1em #ffffff14;	
 }
 .ssWrap {
 	position: relative;
@@ -771,9 +784,9 @@ html {
 	overflow: hidden;
 	user-select: none;
 	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
-	z-index: -12;
-	margin-top: 14.5em;
-	background-image:url(siteassets/clients/ss001/ss4.webp);
+	z-index: -16;
+	margin-top: -4.5em;
+	background-image:url(siteassets/clients/ss001/wrap.webp);
 	background-size: cover;
 	background-position: center;
 }
@@ -797,4 +810,149 @@ html {
 	justify-content: center;
 	color: white;
 	flex-direction: column;
+}
+
+
+/*--tear-strip-modular----------------------------*/
+/*------------------------------------------------*/
+.tearWrap {
+    background: none;
+	position: absolute;
+	height: 5.2em;
+	width: 61.8em;
+	border-radius: 3.5em 0 0 3.5em;
+	overflow: hidden;
+	user-select: none;
+	z-index: 10;
+	margin: 32em 0 0 -3em;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+    
+}
+.tearStrip {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.tearBack {
+	margin-top: 32em;
+	position: absolute;
+}
+.ripstrip {
+	border: none;
+	padding: 0;
+	background: none;
+	cursor: pointer;
+}
+.ripstrip:hover {
+	transform: translateX(0.25em);
+    transition: transform 0.1s ease-in-out 0ms,color 0.2s ease-in-out 0s;
+	filter: contrast(0.95) brightness(1.15);
+}
+.ripstrip:disabled {
+	transform: translateX(80em);
+    transition: transform 0.4s ease-in-out 0ms,color 0.2s ease-in-out 0s;
+}
+/*------------------------------------------------*/
+
+
+
+
+
+
+.cbTab {
+	
+	color: white;
+	background-color: #282828;
+	position: absolute;
+	height: 2.2em;
+	width: 58.8em;
+	border-radius: 0 0 0.7em 0.7em;
+	overflow: hidden;
+	user-select: none;
+	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
+	z-index: 1;
+	margin-top: 1.2em;
+	background-image: url(siteassets/card.webp);
+	background-size: cover;
+	background-position: bottom;
+}
+.cbTab2 {
+	
+	color: white;
+	background-color: #282828;
+	position: absolute;
+	height: 2.2em;
+	width: 58.8em;
+	border-radius: 0 0 0.7em 0.7em;
+	overflow: hidden;
+	user-select: none;
+	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
+	z-index: -9;
+	margin-top: -1em;
+	background-image: url(siteassets/card.webp);
+	background-size: cover;
+	background-position: bottom;
+}
+.cbTab3 {
+	
+	color: white;
+	background-color: #282828;
+	position: absolute;
+	height: 2.2em;
+	width: 58.8em;
+	border-radius: 0 0 0.7em 0.7em;
+	overflow: hidden;
+	user-select: none;
+	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
+	z-index: -17;
+	margin-top: -1em;
+	background-image: url(siteassets/card.webp);
+	background-size: cover;
+	background-position: bottom;
+}
+.cbTab4 {
+	
+	color: white;
+	background-color: #282828;
+	position: absolute;
+	height: 2.2em;
+	width: 58.8em;
+	border-radius: 0 0 0.7em 0.7em;
+	overflow: hidden;
+	user-select: none;
+	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
+	z-index: -17;
+	margin-top: -1em;
+	background-image: url(siteassets/card.webp);
+	background-size: cover;
+	background-position: bottom;
+}
+.footer {
+	position: relative;
+	background-color: #6e6e6e;
+	color: #ffffff33;
+	display: flex;
+	height: 2.5em;
+	width: 58.8em;
+	margin-top: -0.7em;
+    background-image: url(siteassets/bg_contact.webp);
+	background-size: cover;
+	background-position-y: -10.8em;
+	justify-content: right;
+	font-family: 'gmarket sans';
+	z-index: -21;
+}
+
+
+.bgDots {
+	--d: 2px; 
+	position: fixed;
+	margin: 1.1em 0 0 1.1em;
+	background: radial-gradient(circle at var(--d) var(--d), #ffffff3b calc(var(--d) - 1px), #783f3f00 var(--d)) 0 0 / 40px 40px;
+	background-position: center;
+	background-repeat: space;
+	width: 100%;
+	height: 100%;
 }
