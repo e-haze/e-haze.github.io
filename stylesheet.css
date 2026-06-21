@@ -19,11 +19,12 @@ html {
 	text-decoration: none;
 }
 #linkHeadURL {
-	color: black;
+	color: #eeeeee;
 	text-decoration: none;
 }
 #linkHeadURL:hover {
-	color: white;
+	color: #202020;
+	background: #eeeeee;
 	text-decoration: none;
 }
 #linkSPURL {
@@ -74,11 +75,11 @@ html {
 	border-radius: 0 0 0.7em 0.7em;
 	align-items: center;
 	justify-content: center;
-	height: 15.5em;
+	height: 14.7em;
 	width: 100%;
 	background-position: center;
 	background-size: cover;
-	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
+	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff1a;
 	z-index: 5;
 	user-select: none;
     background-image: url(siteassets/bg_banner.webp);
@@ -127,7 +128,7 @@ html {
 	overflow: hidden;
 	user-select: none;
 }
-.ctMenuTab {
+.ctMenuStatic {
 	color: white;
 	background-color: var(--Acc);
 	position: absolute;
@@ -136,22 +137,17 @@ html {
 	border-radius: 0 0 0.7em 0.7em;
 	overflow: hidden;
 	user-select: none;
-	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f;
+	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f, inset 0 -0.12em 0.1em 0 #ffffff21;
 	z-index: 2;
 	margin-top: -0.5em;
-	background-image: repeating-linear-gradient(45deg, #0a0a0a00, #0a0a0a00 4px, #1717171c 0, #1717171c 8px);
-    transition: height 0.4s ease-in-out 0s,color 0.5s ease-in-out 1.5s;
+	background-image: url(siteassets/bg_banner.webp);
+	background-size: cover;
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
 	cursor: pointer;
 	font-family: 'gmarket sans';
-}
-.ctMenuTab:hover {
-	height: 7.0em;
-	backdrop-filter: blur(2em);
-	color: #0000;
-    transition: height 0.4s ease-in-out 0ms,color 0.2s ease-in-out 0s;
+	filter: contrast(0.9);
 }
 .ctWrapperV {
 	background-color: #0000;
@@ -311,7 +307,7 @@ html {
 	height: 21.25em;
 	width: 58.8em;
 	overflow: hidden;
-	background-image: repeating-linear-gradient(45deg, #0a0a0a00, #0a0a0a00 4px, #1717171c 0, #1717171c 8px);
+	background-image: repeating-linear-gradient(45deg, #0a0a0a00, #0a0a0a00 4px, #17171714 0, #17171714 8px);
 	box-shadow: 0 0.45em 0.15em 0 #00000060, 0 0.15em 0.15em 0 #0000000f;
 	border-radius: 0 0 0.5em 0.5em;
 	position: relative;
@@ -942,10 +938,8 @@ html {
 	background-position-y: -10.8em;
 	justify-content: right;
 	font-family: 'gmarket sans';
-	z-index: -21;
+	z-index: -22;
 }
-
-
 .bgDots {
 	--d: 2px; 
 	position: fixed;
