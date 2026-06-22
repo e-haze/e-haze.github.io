@@ -145,7 +145,6 @@ html {
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
-	cursor: pointer;
 	font-family: 'gmarket sans';
 	filter: contrast(0.9);
 }
